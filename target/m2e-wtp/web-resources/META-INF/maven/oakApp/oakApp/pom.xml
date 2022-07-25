@@ -36,7 +36,7 @@
 			<artifactId>standard</artifactId>
 			<version>1.1.2</version>
 		</dependency>
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc11</artifactId>
 			<version>21.1.0.0</version>
@@ -44,7 +44,7 @@
 		<dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
+</dependency> -->
 	</dependencies>
   <build>
     <plugins>
@@ -58,7 +58,10 @@
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
-      </plugin>
+      </plugin><plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
     </plugins>
   </build>
 </project>
